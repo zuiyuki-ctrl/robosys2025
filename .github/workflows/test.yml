@@ -8,5 +8,7 @@ jobs:             #走らせたい処理（ジョブ）のリスト
         python-version: ["3.7", "3.8", "3.9", "3.10"] 
     steps:                   #手続きの記述
     - uses: actions/checkout@v3  #https://github.com/actions/checkoutのバージョン3を使用             
-    - name: All test             #このジョブの名前
+    - name: Test plus.py         #plus.pyのテスト
       run: bash -xv ./test.bash  #テストのシェルスクリプトを走らせる
+    - name: Test textstats.py    #textstats.pyのテスト
+      run: bash -xv ./test_textstats.bash  #textstats.pyのテストスクリプトを走らせる
