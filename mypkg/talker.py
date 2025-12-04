@@ -26,9 +26,8 @@ n = 0 #カウント用変数
 
 def cb():
     global n
-    msg = Person()         #送信するデータの型を変更
-    msg.name = "Tom"       #msgファイルに書いた「name」
-    msg.age = n            #msgファイルに書いた「age」                             
+    msg = Int16()
+    msg.data = n           #msgファイルに書いた「age」                             
     pub.publish(msg)
     n += 1
 

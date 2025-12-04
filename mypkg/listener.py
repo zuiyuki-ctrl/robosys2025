@@ -1,6 +1,6 @@
 import rclpy     
 from rclpy.node import Node      #ノードを実装するためのNodeクラス（クラスは第10回で）
-from person_msgs.srv import Query #使う型を変更
+from std_msgs.msg import Int16 #使う型を変更
 # rclpy.init()
 # node = Node("listener")
 
